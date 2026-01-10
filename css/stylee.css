@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+body {
+  background: #f8f9ff; /* Lighter background */
+  font-family: "Poppins", sans-serif;
+}
+
+*::selection {
+  background: #6a11cb; /* Richer purple */
+  color: #fff;
+}
+
+html::-webkit-scrollbar {
+  width: 0.8rem;
+}
+html::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+html::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #6a11cb, #4a00e0); /* Gradient scrollbar */
+  border-radius: 1rem;
+}
+
+/* Preloader */
+.loader-container {
+  background: #0a0a2e; /* Dark navy */
+}
+
+/* Navbar */
+header {
+  background: #0a0a2e; /* Dark navy */
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
+}
+
+.heading {
+  color: #2d2d32; /* Darker text */
+}
+.heading span {
+  color: #6a11cb; /* Richer purple */
+}
+
+header .logo:hover,
+header .logo i:hover {
+  color: #ffd900; /* Gold accent */
+}
+
+/* Hero Section */
+.home .content h2 {
+  color: #0a0a2e; /* Dark navy */
+}
+.home .content h2 span {
+  color: #6a11cb; /* Richer purple */
+}
+
+.home .btn {
+  background: linear-gradient(135deg, #6a11cb, #4a00e0); /* Modern gradient */
+  box-shadow: 0 5px 20px rgba(106, 17, 203, 0.4);
+}
+
+/* Social Icons */
+.social-icons a {
+  background-color: #0a0a2e; /* Dark navy */
+  color: #ffd900; /* Gold accent */
+}
+.social-icons a:hover {
+  background-color: #6a11cb; /* Richer purple */
+}
+
+/* About Section */
+.about {
+  background: rgba(255, 255, 255, 0.9); /* Slightly more transparent */
+}
+.about .row .image1 img {
+  box-shadow: 0 10px 30px rgba(106, 17, 203, 0.2); /* Purple shadow */
+}
+
+/* Skills Section */
+.skills {
+  background: linear-gradient(135deg, #6a11cb, #4a00e0); /* Modern gradient */
+}
+.skills .container {
+  background: #0a0a2e; /* Dark navy */
+}
+.skills .container .bar {
+  background: rgba(255, 255, 255, 0.95); /* Brighter white */
+}
+
+/* Education Section */
+.education .box-container .box {
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08); /* Softer shadow */
+}
+
+/* Work Section */
+.work {
+  background: linear-gradient(to bottom, #0a0a2e, #00002c); /* Darker gradient */
+}
+.work .box-container .box .content {
+  background: rgba(255, 255, 255, 0.95); /* Brighter overlay */
+}
+
+/* Experience Section */
+.experience .content {
+  background-color: #fff5cc; /* Softer yellow */
+}
+
+/* Contact Section */
+.contact {
+  background: #f0f4fe; /* Lighter blue */
+}
+.contact form .field input,
+.contact form .message textarea {
+  background: rgba(255, 255, 255, 0.9); /* Brighter background */
+}
+
+/* Footer */
+.footer {
+  background: #0a0a2e; /* Dark navy */
+}
+.footer .box-container .box .share a:hover {
+  background: #6a11cb; /* Richer purple */
+}
+
+/* Scroll Top */
+#scroll-top {
+  background: #6a11cb; /* Richer purple */
+  box-shadow: 0 5px 20px rgba(106, 17, 203, 0.3);
+}
+
