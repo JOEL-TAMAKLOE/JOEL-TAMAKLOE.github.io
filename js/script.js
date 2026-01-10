@@ -119,11 +119,11 @@ document.addEventListener('visibilitychange',
     function () {
         if (document.visibilityState === "visible") {
             document.title = "Portfolio | Joel Tamakloe";
-            $("#smiley").attr("href", "assets/web-images/smiley.png");
+            $("#smiley").attr("href", "web-images/smiley.png");
         }
         else {
             document.title = "Come Back To Portfolio";
-            $("#sad").attr("href", "assets/web-images/sad.png");
+            $("#sad").attr("href", "web-images/sad.png");
         }
     });
 
@@ -254,19 +254,17 @@ document.onkeydown = function (e) {
 }
 
 // Start of Tawk.to Live Chat
-
-
+    
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
 (function(){
 var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
 s1.async=true;
-s1.src='https://embed.tawk.to/167bb762ca9e4eb190d121b9f/1ikq4b7tt';
+s1.src='https://embed.tawk.to/696237141d5b7c197ccfa424/1jejqeaho';
 s1.charset='UTF-8';
 s1.setAttribute('crossorigin','*');
 s0.parentNode.insertBefore(s1,s0);
 })();
-
-
+    
 // End of Tawk.to Live Chat
 
 
