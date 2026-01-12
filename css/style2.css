@@ -804,7 +804,6 @@ header .navbar ul li a:hover {
   position: relative;
   overflow: hidden;
   height: 30rem;
-  width: 100%;
 }
 .projects .box-container .box img {
   height: 100%;
@@ -832,8 +831,7 @@ header .navbar ul li a:hover {
   background: #ffd900;
 }
 .projects .box-container .box .content .tag h3 {
-  font-size: 1.2rem;
-  font-size: 900;
+  font-size: 1.5rem;
   justify-content:left;
   
 }
@@ -843,13 +841,13 @@ header .navbar ul li a:hover {
 }
 
 .projects .desc {
-  margin: 1.9rem;
+  margin: 1.8rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 .projects .desc p {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
 }
 
 .projects .desc .btns {
