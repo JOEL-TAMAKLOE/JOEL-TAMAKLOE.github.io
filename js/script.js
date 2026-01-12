@@ -123,7 +123,7 @@ document.addEventListener('visibilitychange',
         }
         else {
             document.title = "Come Back To Portfolio";
-            $("#sad").attr("href", "web-images/sad.png");
+            $("#sad").attr("href", "web-images\sad.png");
         }
     });
 
@@ -409,7 +409,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Next button functionality
   nextButton.addEventListener('click', () => {
-    if (playbackMode === 'sequential') {
+    if (playbackMode === 'random') {
       currentSongIndex = (currentSongIndex + 1) % songs.length;
     } else {
       currentSongIndex = Math.floor(Math.random() * songs.length);
