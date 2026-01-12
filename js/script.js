@@ -170,7 +170,7 @@ function showProjects(projects) {
     projects.slice(0, 10).filter(project => project.category != "android").forEach(project => {
         projectHTML += `
         <div class="box tilt">
-      <img draggable="false" src="/assets/images/projects/${project.image}.png" alt="project" />
+      <img draggable="false" src="images/projects/${project.image}.png" alt="project" />
       <div class="content">
         <div class="tag">
         <h3>${project.name}</h3>
@@ -330,18 +330,18 @@ document.addEventListener('DOMContentLoaded', function() {
     const playbackModeButton = document.getElementById('playback-mode-button');
 
     const songs = [
-    { title: 'Count on me', src: '../bg_music/Bruno Mars - Count_On_Me.mp3' },
-    { title: 'It will Rain', src: '../bg_music/Bruno Mars - It_Will_Rain.mp3' },
-    { title: 'Electra', src: '../bg_music/Electra.mp3' },
-    { title: 'lost Ones', src: '../bg_music/J.Cole–Lost_Ones.mp3' },
-    { title: 'Sailor man', src: '../bg_music/mr.sailor man-wizard.mp3' },
-    { title: 'Home', src: '../bg_music/Phillip_Phillips-Homee.mp3' },
-    { title: 'Lose Control', src: '../bg_music/Teddy-Swims-Lose_Control.mp3' },
-    { title: 'Higher Power', src: '../bg_music/Wizard-Chan-Higher_Powers.mp3' },
-    { title: 'Legacy', src: '../bg_music/Wizard-Chan–Legacy.mp3' },
-    { title: 'Time traveler', src: '../bg_music/Wizard_Chan–Time_Traveler.mp3' },
-    { title: 'Earth Song', src: '../bg_music/WIZARD CHAN- EARTH SONG.mp3' },
-    { title: 'Loner', src: '../bg_music/Wizard_Chan_Ft. Joeboy– Loner.mp3' },
+    { title: 'Count on me', src: 'bg_music/Bruno Mars - Count_On_Me.mp3' },
+    { title: 'It will Rain', src: 'bg_music/Bruno Mars - It_Will_Rain.mp3' },
+    { title: 'Electra', src: 'bg_music/Electra.mp3' },
+    { title: 'lost Ones', src: 'bg_music/J.Cole–Lost_Ones.mp3' },
+    { title: 'Sailor man', src: 'bg_music/mr.sailor man-wizard.mp3' },
+    { title: 'Home', src: 'bg_music/Phillip_Phillips-Homee.mp3' },
+    { title: 'Lose Control', src: 'bg_music/Teddy-Swims-Lose_Control.mp3' },
+    { title: 'Higher Power', src: 'bg_music/Wizard-Chan-Higher_Powers.mp3' },
+    { title: 'Legacy', src: 'bg_music/Wizard-Chan–Legacy.mp3' },
+    { title: 'Time traveler', src: 'bg_music/Wizard_Chan–Time_Traveler.mp3' },
+    { title: 'Earth Song', src: 'bg_music/WIZARD CHAN- EARTH SONG.mp3' },
+    { title: 'Loner', src: 'bg_music/Wizard_Chan_Ft. Joeboy– Loner.mp3' },
     ];
 
     let currentSongIndex = 0;
