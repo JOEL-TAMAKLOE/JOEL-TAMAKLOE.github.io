@@ -1431,6 +1431,13 @@ form .button-area {
 #scroll-top.active {
   top: calc(100% - 18rem);
 }
+
+#scroll-top i {
+  color: rgb(13, 0, 44);
+  font-size: 2rem;
+  display: inline-block;
+}
+
 /* scroll top ends */
 
 /*Music Player starts */
