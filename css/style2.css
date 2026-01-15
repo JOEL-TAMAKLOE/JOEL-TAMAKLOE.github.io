@@ -1399,20 +1399,6 @@ form .button-area {
 }
 /* footer section ends */
 
-/*Music Player starts */
-.music-controls {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}  
-
-#volume-slider {
-  width: 100px;
-  height: 10px;
-  margin: 0 10px;
-} 
-/*Music Player ends */
-
 /* common media queries starts*/
 @media (max-width: 450px) {
   html {
@@ -1430,21 +1416,34 @@ form .button-area {
 /* scroll top starts */
 #scroll-top {
   position: fixed;
-  top: -140%;
   right: 2rem;
-  padding: 1rem 1.5rem;
-  font-size: 2rem;
-  background: #ffd900;
-  color: rgb(13, 0, 44);
-  border-radius: 50%;
-  transition: 1s linear;
+  bottom: 120px;      
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(40px);
+  transition: 0.4s ease;
   z-index: 1000;
 }
+
 #scroll-top.active {
-  top: calc(100% - 12rem);
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
 }
+/* scroll top ends */
 
+/*Music Player starts */
+.music-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}  
 
+#volume-slider {
+  width: 100px;
+  height: 10px;
+  margin: 0 10px;
+} 
 
 .music-player-float {
   position: fixed;
@@ -1515,6 +1514,7 @@ form .button-area {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-/* scroll top ends */
 
 
+
+/*Music Player ends */
