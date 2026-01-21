@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Brand Identity Projects | Joel Tamakloe</title>
+
+  <meta name="description" content="Brand identity and visual design projects by Joel Tamakloe, including logo systems and packaging design." />
+
+  <link rel="stylesheet" href="css/style2.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="shortcut icon" href="web-images/smiley.png" type="image/x-png" />
+</head>
+
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<header>
+  <a href="index.html" class="logo"><i class="fas fa-lightbulb"></i> PORTFOLIO</a>
+  <div id="menu" class="fas fa-bars"></div>
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html#home">Home</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#skills">Skills</a></li>
+      <li><a href="index.html#projects">Projects</a></li>
+      <li><a href="index.html#experience">Experience</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- ===== BRAND IDENTITY SECTION ===== -->
+<section class="brand-identity">
+
+  <h2 class="heading">Brand <span>Identity</span></h2>
+  <p class="section-intro">
+    Visual identity, logo systems, and packaging designs created for real businesses.
+    Each project focuses on clarity, consistency, and brand storytelling.
+  </p>
+
+  <!-- ===== BRAND 1 ===== -->
+  <div class="brand-block">
+    <h3>Kira Baby Diapers</h3>
+    <p class="brand-desc">
+      Logo and packaging identity designed to communicate care, trust, and comfort
+      for infants and parents.
+    </p>
+
+    <div class="slider" data-slider>
+      <button class="slide-btn prev">&#10094;</button>
+      <div class="slides">
+        <img src="images/kira-1.jpg" alt="Kira Baby Diapers Logo">
+        <img src="images/kira-2.jpg" alt="Kira Baby Diapers Packaging">
+        <img src="images/kira-3.jpg" alt="Kira Baby Diapers Brand Visuals">
+      </div>
+      <button class="slide-btn next">&#10095;</button>
+    </div>
+  </div>
+
+  <!-- ===== BRAND 2 ===== -->
+  <div class="brand-block">
+    <h3>Yobysin</h3>
+    <p class="brand-desc">
+      Brand identity and logo system focused on boldness, simplicity, and recognition
+      across digital and print media.
+    </p>
+
+    <div class="slider" data-slider>
+      <button class="slide-btn prev">&#10094;</button>
+      <div class="slides">
+        <img src="images/yobysin-1.jpg" alt="Yobysin Logo Design">
+        <img src="images/yobysin-2.jpg" alt="Yobysin Brand Assets">
+      </div>
+      <button class="slide-btn next">&#10095;</button>
+    </div>
+  </div>
+
+  <div class="back-link">
+    <a href="creative-projects.html" class="btn">
+      <i class="fas fa-arrow-left"></i> Back to Creative Projects
+    </a>
+  </div>
+
+</section>
+
+<!-- ===== SIMPLE SLIDER SCRIPT ===== -->
+<script>
+  document.querySelectorAll('[data-slider]').forEach(slider => {
+    const slides = slider.querySelector('.slides');
+    const images = slides.querySelectorAll('img');
+    let index = 0;
+
+    slider.querySelector('.next').onclick = () => {
+      index = (index + 1) % images.length;
+      slides.style.transform = `translateX(-${index * 100}%)`;
+    };
+
+    slider.querySelector('.prev').onclick = () => {
+      index = (index - 1 + images.length) % images.length;
+      slides.style.transform = `translateX(-${index * 100}%)`;
+    };
+  });
+</script>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>
