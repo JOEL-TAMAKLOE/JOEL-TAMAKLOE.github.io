@@ -317,6 +317,48 @@ srtop.reveal('.experience .timeline .container', { interval: 400 });
 srtop.reveal('.contact .container', { delay: 400 });
 srtop.reveal('.contact .container .form-group', { delay: 400 });
 
+// ================= ALL PROJECTS CATEGORY FILTER =================
+document.addEventListener("DOMContentLoaded", function () {
+  const filterButtons = document.querySelectorAll(".category-filters button");
+  const projectBoxes = document.querySelectorAll(".box-container .box");
+
+  if (!filterButtons.length) return; // page safety check
+
+  filterButtons.forEach(button => {
+    button.addEventListener("click", () => {
+      const category = button.dataset.category;
+
+      projectBoxes.forEach(box => {
+        if (category === "all" || box.dataset.category === category) {
+          box.style.display = "block";
+        } else {
+          box.style.display = "none";
+        }
+      });
+    });
+  });
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const articles = document.querySelectorAll(".article-content");
+
+  articles.forEach((article) => {
+    const text = article.innerText;
+    const words = text.split(/\s+/).length;
+    const readingTime = Math.ceil(words / 200); // average 200 WPM
+    const meta = document.querySelector(".article-meta");
+
+    if (meta) {
+      const timeEl = document.createElement("span");
+      timeEl.className = "reading-time";
+      timeEl.innerText = ` · ${readingTime} min read`;
+      meta.appendChild(timeEl);
+    }
+  });
+});
+
+
 /* MUSIC PLAYER */
 document.addEventListener('DOMContentLoaded', function() {
   const music = document.getElementById('background-music');
@@ -450,3 +492,25 @@ document.addEventListener('DOMContentLoaded', function() {
 
 });
 // End of music player functionality
+
+// ================= ALL PROJECTS CATEGORY FILTER =================
+document.addEventListener("DOMContentLoaded", function () {
+  const filterButtons = document.querySelectorAll(".category-filters button");
+  const projectBoxes = document.querySelectorAll(".box-container .box");
+
+  if (!filterButtons.length) return; // page safety check
+
+  filterButtons.forEach(button => {
+    button.addEventListener("click", () => {
+      const category = button.dataset.category;
+
+      projectBoxes.forEach(box => {
+        if (category === "all" || box.dataset.category === category) {
+          box.style.display = "block";
+        } else {
+          box.style.display = "none";
+        }
+      });
+    });
+  });
+});
