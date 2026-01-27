@@ -1090,6 +1090,7 @@ header .navbar ul li a:hover {
   text-align: center;
   margin: 50px 0;
 }
+
 .view-all-projects .btn {
   padding: 12px 30px;
   font-size: 1rem;
@@ -1098,6 +1099,7 @@ header .navbar ul li a:hover {
   border-radius: 8px;
   transition: 0.3s;
 }
+
 .view-all-projects .btn:hover {
   background-color: #333;
 }
