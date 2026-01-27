@@ -905,6 +905,9 @@ header .navbar ul li a:hover {
 #all-projects {
   padding-top: 120px;
 }
+#creative-projects {
+  padding-top: 120px;
+}
 
 .modal {
   display: none;
