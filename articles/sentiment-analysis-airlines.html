@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>How Sentiment Analysis Helps Airlines Improve Customer Experience</title>
+
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/articles.css">
+  <link rel="stylesheet" href="../assets/css/all.min.css">
+</head>
+
+<body>
+
+<section class="article-page">
+
+  <h1 class="article-title">
+    How Sentiment Analysis Helps Airlines Improve Customer Experience
+  </h1>
+
+  <p class="article-meta">
+    By Joel Tamakloe · Data Science · Machine Learning · Web Scraping · NLP
+  </p>
+
+  <img src="../assets/images/viewforageBRITISH.jpg" alt="British Airways Analysis" class="article-hero">
+
+  <div class="article-content">
+
+    <h2>Introduction</h2>
+    <p>
+      Airlines receive thousands—sometimes millions—of customer reviews across booking platforms,
+      airline websites, and independent review forums. These reviews contain valuable insights about
+      service quality, customer satisfaction, and operational challenges. However, manually reading
+      and interpreting this volume of unstructured text is inefficient, subjective, and nearly
+      impossible at scale.
+    </p>
+    <p>
+      This is where <strong>sentiment analysis</strong> becomes a powerful tool. By combining web
+      scraping, machine learning, and natural language processing (NLP), airlines can automatically
+      analyze customer feedback, detect recurring issues, and transform raw text into actionable
+      insights. This article explores how sentiment analysis was applied to British Airways customer
+      reviews and how the resulting insights can support better customer experience decisions.
+    </p>
+
+    <h2>The Business Context: Why Customer Sentiment Matters in Aviation</h2>
+    <p>
+      Customer experience is a critical competitive advantage in the airline industry. Factors such
+      as flight delays, staff behavior, communication quality, and baggage handling strongly influence
+      customer loyalty and brand perception. When negative experiences occur repeatedly across many
+      customers, they can significantly impact reputation and revenue.
+    </p>
+    <p>
+      Traditional approaches to understanding customer feedback often rely on surveys or manual
+      summaries. While useful, these methods lack scale and speed. Sentiment analysis enables airlines
+      to continuously monitor customer perception, identify pain points early, and prioritize
+      improvements based on real customer feedback rather than assumptions.
+    </p>
+
+    <h2>Data Collection Through Web Scraping</h2>
+    <p>
+      To build the dataset for this project, customer reviews were collected using
+      <strong>web scraping techniques</strong> from publicly available British Airways review pages.
+      Automated scripts were used to extract review text, ratings, and relevant metadata directly
+      from the website.
+    </p>
+    <p>
+      Web scraping enabled the collection of a large and diverse set of real customer opinions that
+      would otherwise be time-consuming to gather manually. The resulting dataset contained
+      thousands of reviews written in natural, unstructured language, closely reflecting authentic
+      customer experiences.
+    </p>
+
+    <h2>Data Cleaning and NLP Preprocessing</h2>
+    <p>
+      As with most scraped text data, the raw reviews contained noise such as inconsistent formatting,
+      special characters, emojis, and informal language. Before modeling, the text was cleaned and
+      prepared using standard NLP preprocessing techniques.
+    </p>
+    <p>
+      These steps included converting text to lowercase, removing punctuation and numbers,
+      eliminating stopwords, and tokenizing text into individual words. This preprocessing ensured
+      that the machine learning models focused on meaningful linguistic patterns rather than
+      irrelevant artifacts.
+    </p>
+
+    <h2>Modeling Approach: Applying Machine Learning for Sentiment Classification</h2>
+    <p>
+      Instead of rule-based sentiment detection, a machine learning approach was adopted to handle
+      the complexity and variability of human language. Supervised learning models were trained to
+      classify customer reviews into sentiment categories such as positive, neutral, and negative.
+    </p>
+    <p>
+      Feature extraction techniques transformed the text into numerical representations suitable for
+      modeling. The objective was not only to label sentiment, but also to uncover recurring themes
+      within customer feedback—highlighting what customers praise most and what issues consistently
+      generate dissatisfaction.
+    </p>
+
+    <h2>Key Insights and Findings</h2>
+    <p>
+      Several meaningful patterns emerged from the sentiment analysis:
+    </p>
+    <ul>
+      <li>Negative sentiment frequently clustered around flight delays and poor communication</li>
+      <li>Staff behavior and in-flight service were strong drivers of positive sentiment</li>
+      <li>Repeated complaints pointed to systemic issues rather than isolated incidents</li>
+      <li>Neutral sentiment often masked mild dissatisfaction that could escalate if ignored</li>
+    </ul>
+    <p>
+      These insights demonstrate how sentiment analysis helps organizations move beyond anecdotal
+      feedback and toward data-driven prioritization of customer experience challenges.
+    </p>
+
+    <h2>Translating Insights into Business Impact</h2>
+    <p>
+      The real value of sentiment analysis lies in how insights are applied. Airlines can leverage
+      sentiment findings to improve communication strategies during delays, design targeted staff
+      training programs, and identify underperforming services early.
+    </p>
+    <p>
+      By aligning customer sentiment data with operational decisions, airlines can proactively
+      enhance customer experience rather than reacting only after reputational damage has already
+      occurred.
+    </p>
+
+    <h2>Limitations and Future Improvements</h2>
+    <p>
+      While sentiment analysis is powerful, it has limitations. Models may struggle with sarcasm,
+      mixed emotions within a single review, or cultural nuances in language. Additionally, sentiment
+      alone does not fully capture the context behind customer dissatisfaction.
+    </p>
+    <p>
+      Future enhancements could include aspect-based sentiment analysis, topic modeling for deeper
+      insight discovery, real-time sentiment monitoring dashboards, and integration with operational
+      performance metrics.
+    </p>
+
+    <h2>Conclusion</h2>
+    <p>
+      By combining web scraping, machine learning, and natural language processing, this project
+      demonstrates how unstructured customer reviews can be transformed into actionable insights.
+      The British Airways sentiment analysis highlights the power of data-driven approaches in
+      improving customer experience and guiding strategic decisions.
+    </p>
+    <p>
+      In an industry where customer perception directly impacts loyalty and revenue, leveraging
+      sentiment analysis is no longer optional—it is essential for building scalable,
+      customer-centric airline operations.
+    </p>
+
+  </div>
+
+  <div class="article-actions">
+    <a href="../articles.html" class="btn">
+      <i class="fas fa-arrow-left"></i> Back to Articles
+    </a>
+  </div>
+
+</section>
+
+<script src="../assets/js/script.js"></script>
+</body>
+</html>
