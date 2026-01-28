@@ -908,6 +908,10 @@ header .navbar ul li a:hover {
 #creative-projects {
   padding-top: 120px;
 }
+.creative-projects {
+  background: linear-gradient(to bottom, #310ae0f5, #310ae0f1);
+  padding: 6rem 0;
+}
 
 .modal {
   display: none;
