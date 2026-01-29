@@ -119,11 +119,11 @@ document.addEventListener('visibilitychange',
     function () {
         if (document.visibilityState === "visible") {
             document.title = "Portfolio | Joel Tamakloe";
-            $("#smiley").attr("href", "./web-images/smiley.png");
+            $("#smiley").attr("href", "/web-images/smiley.png");
         }
         else {
             document.title = "Come Back To Portfolio";
-            $("#sad").attr("href", "./web-images/sad.png");
+            $("#sad").attr("href", "/web-images/sad.png");
         }
     });
 
