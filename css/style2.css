@@ -906,7 +906,7 @@ header .navbar ul li a:hover {
   padding-top: 40px;
 }
 .creative-projects {
-  padding-top: 40px;
+  padding-top: 50px;
 }
 .creative-projects {
   background: linear-gradient(to bottom, #310ae0f5, #310ae0f1);
@@ -998,6 +998,16 @@ header .navbar ul li a:hover {
 .creative-projects .desc .btns .btn:hover {
   background: #310ae0f5;
 }
+.section-intro {
+  max-width: 800px;
+  margin: 12px auto 40px auto;
+  text-align: center;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #e6e6e6;
+  opacity: 0.9;
+}
+
 .modal {
   display: none;
   position: fixed;
