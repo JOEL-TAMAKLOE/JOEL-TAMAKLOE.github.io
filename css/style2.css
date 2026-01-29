@@ -905,8 +905,8 @@ header .navbar ul li a:hover {
 #all-projects {
   padding-top: 120px;
 }
-#creative-projects {
-  padding-top: 120px;
+.creative-projects {
+  padding-top: 40px;
 }
 .creative-projects {
   background: linear-gradient(to bottom, #310ae0f5, #310ae0f1);
