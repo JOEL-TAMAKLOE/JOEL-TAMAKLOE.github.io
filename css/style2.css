@@ -903,10 +903,10 @@ header .navbar ul li a:hover {
   transform: translateX(5px);
 }
 #all-projects {
-  padding-top: 40px;
+  padding-top: 50px;
 }
 .creative-projects {
-  padding-top: 50px;
+  padding-top: 40px;
 }
 .creative-projects {
   background: linear-gradient(to bottom, #310ae0f5, #310ae0f1);
