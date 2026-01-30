@@ -1007,7 +1007,39 @@ header .navbar ul li a:hover {
 .creative-projects .desc .btns .btn:hover {
   background: #310ae0f5;
 }
-
+.creative-projects .viewall {
+  display: flex;
+  justify-content: center;
+}
+.creative-projects .viewall .btn {
+  position: relative;
+  line-height: 0;
+  padding: 1.6rem 3rem;
+  border-radius: 0.5em;
+  transition: 0.5s;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  border: 2px solid #fff;
+  box-shadow: 0px 5px 10px rgba(100, 86, 253, 0.4);
+  text-align: center;
+}
+.creative-projects .viewall .btn span {
+  font-weight: 600;
+  font-size: 1.7rem;
+  font-family: "Nunito", sans-serif;
+}
+.creative-projects .viewall .btn i {
+  margin-left: 0.3rem;
+  font-size: 1.5rem;
+  transition: 0.3s;
+}
+.creative-projects .viewall .btn:hover {
+  background: #fff;
+  color: #000;
+}
+.creative-projects .viewall .btn:hover i {
+  transform: translateX(5px);
+}
 /* ================= BRAND IDENTITY ================= */
 
 .brand-identity {
