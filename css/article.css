@@ -45,6 +45,7 @@
   text-align: center;
   font-size: 3.2rem;
   margin-bottom: 1rem;
+  color: #4a00e0;
 }
 
 .articles .heading span {
@@ -57,7 +58,7 @@
   text-align: center;
   font-size: 1.5rem;
   line-height: 1.7;
-  color: #cbd5f5;
+  color: #000000;
 }
 
 /* =========================
