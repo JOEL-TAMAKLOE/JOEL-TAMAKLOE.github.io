@@ -11,6 +11,24 @@
 
 <body>
 
+<!-- ===== NAVBAR ===== -->
+<header>
+  <a href="index.html" class="logo"><i class="fas fa-lightbulb"></i> PORTFOLIO</a>
+  <div id="menu" class="fas fa-bars"></div>
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html#home">Home</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#skills">Skills</a></li>
+      <li><a href="index.html#projects">Projects</a></li>
+      <li><a href="index.html#experience">Experience</a></li>
+      <li><a href="articles.html">Articles</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- ===== ARTICLES SECTION ===== -->
 <section class="articles" id="articles">
 
   <h2 class="heading">Articles & <span>Insights</span></h2>
@@ -19,6 +37,35 @@
     and real-world problem solving through technology.
   </p>
 
+  <!-- ===== FEATURED ARTICLE ===== -->
+  <div class="featured-article">
+    <span class="featured-label">Featured</span>
+
+    <h3>Reimagining Agriculture Through Data and Computer Vision</h3>
+
+    <div class="article-meta">
+      <span class="reading-time">8 min read</span>
+      <span class="dot">•</span>
+      <span class="category">Case Study</span>
+    </div>
+
+    <div class="article-tags">
+      <span class="tag">AI</span>
+      <span class="tag">Data</span>
+      <span class="tag">Computer Vision</span>
+    </div>
+
+    <p>
+      A computer vision based solution that uses machine learning to analyze crop health
+      and provide actionable insights for smarter agricultural decisions.
+    </p>
+
+    <a href="articles/agrivision.html" class="btn">
+      Read Featured Article <i class="fas fa-arrow-right"></i>
+    </a>
+  </div>
+
+  <!-- ===== ARTICLES GRID ===== -->
   <div class="box-container">
 
     <!-- Article 1 -->
@@ -28,36 +75,63 @@
           <h3>The Evolution of AI: A Mirror of Human Biology</h3>
         </div>
         <div class="desc">
+
+          <div class="article-meta">
+            <span class="reading-time">6 min read</span>
+          </div>
+
+          <div class="article-tags">
+            <span class="tag">AI</span>
+            <span class="tag">Human-Centered</span>
+          </div>
+
           <p>
             A look into how AI development is embodying the human biology.
           </p>
+
           <div class="btns">
-            <a href="articles/evolutionai.html" class="btn">Read Article <i class="fas fa-book-open"></i></a>
+            <a href="articles/evolutionai.html" class="btn">
+              Read Article <i class="fas fa-book-open"></i>
+            </a>
           </div>
+
         </div>
       </div>
     </div>
-    
-    
+
     <!-- Article 2 -->
     <div class="box tilt">
       <div class="content">
         <div class="tag">
-          <h3>Reimagining Agriculture Through Data and Computer vision</h3>
+          <h3>Reimagining Agriculture Through Data and Computer Vision</h3>
         </div>
         <div class="desc">
-          <p>
-             A computer vision–based solution that uses machine learning to analyze crop health
-              and provide actionable insights for smarter agricultural decisions.
-          </p>
-          <div class="btns">
-            <a href="articles/agrivision.html" class="btn">Read Article <i class="fas fa-book-open"></i></a>
+
+          <div class="article-meta">
+            <span class="reading-time">8 min read</span>
           </div>
+
+          <div class="article-tags">
+            <span class="tag">AI</span>
+            <span class="tag">Data</span>
+            <span class="tag">Case Study</span>
+          </div>
+
+          <p>
+            A computer vision based solution that uses machine learning to analyze crop health
+            and provide actionable insights for smarter agricultural decisions.
+          </p>
+
+          <div class="btns">
+            <a href="articles/agrivision.html" class="btn">
+              Read Article <i class="fas fa-book-open"></i>
+            </a>
+          </div>
+
         </div>
       </div>
     </div>
-    
-    
+
     <!-- Article 3 -->
     <div class="box tilt">
       <div class="content">
@@ -65,13 +139,28 @@
           <h3>How Sentiment Analysis Helps Airlines Improve Customer Experience</h3>
         </div>
         <div class="desc">
+
+          <div class="article-meta">
+            <span class="reading-time">7 min read</span>
+          </div>
+
+          <div class="article-tags">
+            <span class="tag">Data</span>
+            <span class="tag">NLP</span>
+            <span class="tag">Case Study</span>
+          </div>
+
           <p>
             A practical breakdown of how machine learning and sentiment analysis
             were used to extract actionable insights from British Airways reviews.
           </p>
+
           <div class="btns">
-            <a href="articles/sentiment-analysis-airlines.html" class="btn">Read Article <i class="fas fa-book-open"></i></a>
+            <a href="articles/sentiment-analysis-airlines.html" class="btn">
+              Read Article <i class="fas fa-book-open"></i>
+            </a>
           </div>
+
         </div>
       </div>
     </div>
@@ -83,13 +172,27 @@
           <h3>What Retrieval-Augmented Generation (RAG) Means for AI Assistants</h3>
         </div>
         <div class="desc">
+
+          <div class="article-meta">
+            <span class="reading-time">5 min read</span>
+          </div>
+
+          <div class="article-tags">
+            <span class="tag">AI</span>
+            <span class="tag">RAG</span>
+          </div>
+
           <p>
             An easy-to-understand explanation of RAG, why it matters,
             and how it improves the accuracy of AI chat assistants.
           </p>
+
           <div class="btns">
-            <a href="articles/rag-chat-assistant.html" class="btn">Read Article <i class="fas fa-book-open"></i></a>
+            <a href="articles/rag-chat-assistant.html" class="btn">
+              Read Article <i class="fas fa-book-open"></i>
+            </a>
           </div>
+
         </div>
       </div>
     </div>
@@ -101,13 +204,28 @@
           <h3>Reviving Ride Demand Through Data-Driven Field Strategy: A Yango Experience</h3>
         </div>
         <div class="desc">
+
+          <div class="article-meta">
+            <span class="reading-time">9 min read</span>
+          </div>
+
+          <div class="article-tags">
+            <span class="tag">Data</span>
+            <span class="tag">Field Strategy</span>
+            <span class="tag">Case Study</span>
+          </div>
+
           <p>
             How data-driven decisions, local insights, and experimentation
             helped revive driver and rider engagement in a real marketplace.
           </p>
+
           <div class="btns">
-            <a href="articles/yango-tema.html" class="btn">Read Article <i class="fas fa-book-open"></i></a>
+            <a href="articles/yango-tema.html" class="btn">
+              Read Article <i class="fas fa-book-open"></i>
+            </a>
           </div>
+
         </div>
       </div>
     </div>
