@@ -197,8 +197,37 @@
    BACK LINK
 ========================= */
 
-.back-link {
+.articles.back-link {
   text-align: center;
   margin-top: 5rem;
+}
+
+.articles.back-link .btn {
+  position: relative;
+  line-height: 0;
+  padding: 1.6rem 3rem;
+  border-radius: 0.5em;
+  transition: 0.5s;
   color: #4a00e0;
+  font-weight: 700;
+  border: 2px solid #fff;
+  box-shadow: 0px 5px 10px rgba(65, 84, 241, 0.4);
+  text-align: center;
+}
+.articles.back-link .btn span {
+  font-weight: 600;
+  font-size: 1.7rem;
+  font-family: "Nunito", sans-serif;
+}
+.articles .back-link .btn i {
+  margin-left: 0.3rem;
+  font-size: 1.5rem;
+  transition: 0.3s;
+}
+.articles .back-link .btn:hover {
+  background: #fff;
+  color: #000;
+}
+.articles .back-link .btn:hover i {
+  transform: translateX(5px);
 }
