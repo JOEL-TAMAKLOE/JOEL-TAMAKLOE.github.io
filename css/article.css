@@ -201,7 +201,10 @@
   text-align: center;
   margin-top: 5rem;
 }
-
+.articles .viewall {
+  display: flex;
+  justify-content: center;
+}
 .articles.viewall .btn {
   position: relative;
   line-height: 0;
@@ -225,7 +228,7 @@
   transition: 0.3s;
 }
 .articles .viewall .btn:hover {
-  background: #fff;
+  background: #4a00e0;
   color: #000;
 }
 .articles .viewall .btn:hover i {
