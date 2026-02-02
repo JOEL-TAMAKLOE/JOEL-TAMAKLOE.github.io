@@ -190,7 +190,8 @@
 }
 
 .btn:hover {
-  background: #0ea5e9;
+  background: #ffd900;
+  color: #080000;
 }
 
 /* =========================
