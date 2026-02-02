@@ -11,7 +11,7 @@
 
 .reading-time {
   font-style: italic;
-  color: #666;
+  color: #8255dd;
   margin-left: 5px;
   font-size: 0.9rem;
 }
@@ -197,10 +197,7 @@
    BACK LINK
 ========================= */
 
-.articles.viewall {
-  text-align: center;
-  margin-top: 5rem;
-}
+
 .articles .viewall {
   display: flex;
   justify-content: center;
@@ -228,7 +225,7 @@
   transition: 0.3s;
 }
 .articles .viewall .btn:hover {
-  background: #4a00e0;
+  background: #e9e7eb;
   color: #000;
 }
 .articles .viewall .btn:hover i {
