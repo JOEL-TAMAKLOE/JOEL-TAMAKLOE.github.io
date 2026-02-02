@@ -201,6 +201,7 @@
 .articles .viewall {
   display: flex;
   justify-content: center;
+  padding: 4rem 0;
 }
 .articles.viewall .btn {
   position: relative;
@@ -225,8 +226,8 @@
   transition: 0.3s;
 }
 .articles .viewall .btn:hover {
-  background: #e9e7eb;
-  color: #000;
+  background: #7740e7;
+  color: #fff;
 }
 .articles .viewall .btn:hover i {
   transform: translateX(5px);
