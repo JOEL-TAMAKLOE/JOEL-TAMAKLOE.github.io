@@ -313,6 +313,20 @@
   margin-bottom: 2rem;
 }
 
+
+/* ABSTRACT */
+
+.article-abstract {
+  font-size: 1.6rem;
+  line-height: 1.8;
+  color: #334155;
+  background: #f8fafc;
+  padding: 2.5rem;
+  border-radius: 14px;
+  margin: 3rem 0 4rem;
+  border-left: 5px solid #38bdf8;
+}
+
 /* QUOTES */
 
 .article-quote {
