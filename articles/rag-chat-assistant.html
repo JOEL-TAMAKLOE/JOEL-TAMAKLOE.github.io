@@ -11,6 +11,22 @@
 
 <body>
 
+<header>
+  <a href="index.html" class="logo"><i class="fas fa-lightbulb"></i> PORTFOLIO</a>
+  <div id="menu" class="fas fa-bars"></div>
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html#home">Home</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#skills">Skills</a></li>
+      <li><a href="index.html#projects">Projects</a></li>
+      <li><a href="index.html#experience">Experience</a></li>
+      <li><a href="articles.html">Articles</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
 <section class="article-page">
 
   <h1 class="article-title">
@@ -27,95 +43,148 @@
     class="article-hero"
   />
 
+  <!-- ABSTRACT -->
+  <p class="article-abstract">
+    This article explores the development of an AI chat assistant specialized in artificial intelligence topics.
+    Leveraging Retrieval-Augmented Generation (RAG), the assistant combines the fluency of language models
+    with domain-specific knowledge, producing reliable, context-aware responses for complex AI queries.
+  </p>
+
   <div class="article-content">
 
-    <h2>Why Traditional Chatbots Fall Short</h2>
+    <h2>The Limits of Conventional Chatbots</h2>
     <p>
-      Traditional chatbots rely heavily on pre-trained language models to generate
-      responses based on patterns learned during training. While these models are
-      impressive in terms of fluency and general knowledge, they struggle when
-      answering domain-specific, private, or up-to-date questions.
+      Standard chatbots rely entirely on pre-trained language models, which excel at
+      generating fluent text but often struggle with domain-specific or up-to-date
+      information. In technical areas like AI research, relying solely on these models
+      can produce inaccurate or misleading answers—a phenomenon known as hallucination.
     </p>
     <p>
-      This limitation becomes critical in real-world applications such as internal
-      knowledge systems, customer support tools, and research assistants, where
-      accuracy and contextual relevance are essential. Without access to verified
-      sources, chatbots may produce responses that sound correct but are factually
-      inaccurate—a problem commonly referred to as hallucination.
+      Users seeking precise, verifiable knowledge require systems that can access
+      real data and provide context-aware answers, which is where Retrieval-Augmented
+      Generation comes in.
     </p>
 
-    <h2>What Is Retrieval-Augmented Generation (RAG)?</h2>
+    <h2>Understanding Retrieval-Augmented Generation (RAG)</h2>
     <p>
-      Retrieval-Augmented Generation (RAG) is an architecture that enhances language
-      models by combining them with external knowledge sources.
+      RAG is a paradigm that integrates language models with external knowledge sources.
+      Instead of generating answers solely from internal patterns learned during training,
+      a RAG system first retrieves relevant documents from a curated knowledge base
+      and then uses these documents to guide its response.
     </p>
     <p>
-      Instead of relying solely on the model’s internal memory, a RAG system retrieves
-      relevant documents from a knowledge base at query time and injects them into the
-      prompt. This allows responses to be grounded in factual, verifiable information.
+      Technically, this involves two key steps:
+    </p>
+    <ul>
+      <li><strong>Retrieval:</strong> Querying a vector database of embedded documents to find content
+      semantically related to the user’s question.</li>
+      <li><strong>Augmented Generation:</strong> Feeding the retrieved content into a language model
+      to generate accurate and contextually grounded answers.</li>
+    </ul>
+    <p>
+      This architecture reduces hallucinations and enhances trust, because the assistant’s answers
+      can be traced back to specific source documents.
     </p>
 
-    <h2>Building the AI Chat Assistant: System Architecture</h2>
+    <h2>From RAG to Modern Chat Systems</h2>
     <p>
-      The AI chat assistant developed in this project follows a modular RAG pipeline:
+      Modern AI chat assistants—like those used in research, customer support, and enterprise
+      knowledge systems—are largely built on the principles of RAG. By retrieving relevant
+      information in real time and grounding responses in source documents, these systems
+      can provide specialized knowledge without requiring constant retraining of massive models.
+    </p>
+    <p>
+      Our AI chat assistant represents a simplified but fully functional example of this evolution.
+      Trained on AI-focused documents, it demonstrates how retrieval-based augmentation allows
+      a language model to operate effectively in a niche domain.
+    </p>
+
+    <h2>Data Sources and Preprocessing</h2>
+    <p>
+      The assistant was trained on a curated collection of AI-related documents,
+      including research papers, tutorials, and technical articles. Preprocessing
+      involved cleaning the text, standardizing formats, and splitting documents
+      into semantically meaningful chunks for vector embedding and retrieval.
+    </p>
+
+    <h2>System Architecture</h2>
+    <p>
+      The architecture follows a modular RAG pipeline:
     </p>
     <ul>
       <li>Document ingestion and preprocessing</li>
-      <li>Text chunking and vector embedding</li>
-      <li>Storage in a vector database for similarity search</li>
-      <li>Semantic retrieval based on user queries</li>
+      <li>Text chunking and embedding into vector representations</li>
+      <li>Storage in a vector database for semantic search</li>
+      <li>Retrieval of relevant documents based on user queries</li>
       <li>Response generation using a large language model</li>
     </ul>
     <p>
-      This architecture ensures responses are based on retrieved source content
-      rather than model assumptions.
+      This ensures that every response is backed by real AI documents, rather than being
+      purely speculative.
     </p>
 
-    <h2>Key Design Decisions and Challenges</h2>
+    <h2>User Interaction and Examples</h2>
     <p>
-      Several design decisions had a direct impact on the system’s performance.
-      Chunk size selection was critical—chunks that were too large reduced retrieval
-      accuracy, while overly small chunks lost semantic context.
+      Users can ask natural-language questions about AI topics and receive accurate, sourced responses:
     </p>
-    <p>
-      Embedding quality and retrieval thresholds were also carefully tuned.
-      Even the most advanced language models produce poor results when retrieval
-      quality is weak.
-    </p>
-
-    <h2>Why RAG Improves Trust and Reliability</h2>
-    <p>
-      One of the biggest advantages of Retrieval-Augmented Generation is trust.
-      By grounding responses in retrieved documents, the assistant produces answers
-      that are more transparent, accurate, and reliable.
-    </p>
-    <p>
-      This makes RAG particularly useful for applications where correctness matters
-      more than creativity.
-    </p>
-
-    <h2>Real-World Use Cases and Impact</h2>
     <ul>
-      <li>Internal company knowledge assistants</li>
-      <li>Customer support and helpdesk automation</li>
-      <li>Educational and research tools</li>
-      <li>Personalized AI knowledge systems</li>
+      <li><strong>Query:</strong> "Explain transformer models in NLP."<br>
+          <strong>Response:</strong> The assistant retrieves key sections from AI papers and tutorials, summarizing transformer concepts clearly.</li>
+      <li><strong>Query:</strong> "What are the latest advances in machine learning optimization?"<br>
+          <strong>Response:</strong> A concise summary of recent developments drawn from multiple technical documents.</li>
+    </ul>
+
+    <h2>Design Decisions and Challenges</h2>
+    <p>
+      Critical design decisions included selecting chunk sizes to balance retrieval
+      accuracy and context retention, tuning embedding models for AI-specific content,
+      and integrating the vector database with the LLM for fast, relevant responses.
+    </p>
+
+    <h2>Enhancing Trust and Reliability</h2>
+    <p>
+      By grounding responses in source documents, RAG-based assistants improve
+      transparency and reliability. Users can verify answers against the original
+      AI materials, making this approach essential for specialized knowledge domains.
+    </p>
+
+    <h2>Impact and Applications</h2>
+    <ul>
+      <li>AI research assistants for students and professionals</li>
+      <li>Internal knowledge systems for tech companies</li>
+      <li>Customer support automation for AI products</li>
+      <li>Personalized AI learning tools</li>
     </ul>
     <p>
-      Organizations adopting RAG architectures can reduce misinformation while
-      keeping their systems up to date without retraining large models.
+      RAG architectures allow organizations to maintain accurate, up-to-date knowledge
+      without retraining large language models, bridging the gap between generative
+      AI and factual correctness.
+    </p>
+
+    <h2>Lessons Learned</h2>
+    <p>
+      Key takeaways include the importance of curated data, careful tuning of retrieval
+      parameters, and balancing chunk size against semantic context. Even advanced
+      language models rely heavily on high-quality retrieval to provide meaningful
+      answers.
+    </p>
+
+    <h2>Future Enhancements</h2>
+    <p>
+      Potential improvements include multi-document summarization, real-time dataset
+      updates, and broader AI topic coverage while maintaining response reliability.
     </p>
 
     <h2>Conclusion</h2>
     <p>
-      Retrieval-Augmented Generation bridges the gap between fluent language generation
-      and factual accuracy. By integrating external knowledge retrieval into the
-      response pipeline, RAG enables the development of AI assistants that are
-      scalable, trustworthy, and production-ready.
+      Retrieval-Augmented Generation combines the fluency of large language models
+      with the accuracy of external knowledge sources. By applying these principles,
+      AI chat assistants can deliver context-aware, reliable answers in specialized
+      domains like artificial intelligence.
     </p>
     <p>
-      This project demonstrates how thoughtful system design—rather than larger
-      models alone—plays a key role in building reliable real-world AI applications.
+      This project demonstrates the practical evolution from RAG foundations to modern
+      chat systems, highlighting the power of retrieval-based augmentation in real-world applications.
     </p>
 
   </div>
