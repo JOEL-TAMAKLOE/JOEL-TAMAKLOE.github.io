@@ -903,10 +903,10 @@ header .navbar ul li a:hover {
   transform: translateX(5px);
 }
 #all-projects {
-  padding-top: 55px;
+  padding-top: 60px;
 }
 .creative-projects {
-  padding-top: 50px;
+  padding-top: 40px;
 }
 .creative-projects {
   background: linear-gradient(to bottom, #310ae0f5, #310ae0f1);
@@ -1726,7 +1726,7 @@ form .button-area {
   border-radius: 10px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
 
-  width: 150px; /* 🔽 smaller */
+  width: 150px; 
   z-index: 9999;
 }
 
@@ -1734,14 +1734,14 @@ form .button-area {
 .music-controls {
   display: flex;
   align-items: center;
-  gap: 2px; /* 🔽 tighter spacing */
+  gap: 2px; 
 }
 
 .music-controls button {
   background: transparent;
   border: none;
   color: #fff;
-  font-size: 08px; /* 🔽 smaller icons */
+  font-size: 08px; 
   cursor: pointer;
   padding: 4px;
   border-radius: 6px;
@@ -1753,13 +1753,13 @@ form .button-area {
 
 /* Volume slider */
 #volume-slider {
-  width: 40px; /* 🔽 smaller slider */
+  width: 40px; 
 }
 
 /* Song title */
 #song-title {
   margin-top: 4px;
-  font-size: 6px; /* 🔽 smaller text */
+  font-size: 6px; 
   opacity: 0.8;
   white-space: nowrap;
   overflow: hidden;
@@ -1919,7 +1919,7 @@ form .button-area {
   display: block;
   width: 50px;                 
   height: 3px;                 
-  background-color: #4a90e2;   
+  background-color: #310ae0f5;   
   border-radius: 2px;
   margin-top: 6px;             
 }
