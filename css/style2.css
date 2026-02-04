@@ -903,7 +903,7 @@ header .navbar ul li a:hover {
   transform: translateX(5px);
 }
 #all-projects {
-  padding-top: 50px;
+  padding-top: 55px;
 }
 .creative-projects {
   padding-top: 50px;
@@ -1043,7 +1043,7 @@ header .navbar ul li a:hover {
 /* ================= BRAND IDENTITY ================= */
 
 .brand-identity {
-  padding-top: 55px;
+  padding-top: 60px;
   background: linear-gradient(to bottom, #e5ecfb, #dbe3f7);
 }
 
@@ -1892,7 +1892,7 @@ form .button-area {
 }
 
 .brand-block {
-  margin-bottom: 4rem;                       
+  margin-bottom: 6rem;                       
   padding: 1.8rem;                           
   border-radius: 12px;                        
   background-color: #f9f9f9;                 
